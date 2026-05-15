@@ -40,17 +40,13 @@
     const root = document.getElementById("reconstruction-list");
     if (!root) return;
 
-    (list || []).forEach((item, index) => {
+    (list || []).forEach((item) => {
       root.appendChild(
         el("article", { className: "demo-card" }, [
           el("div", { className: "demo-card-header" }, [
             el("p", {
               className: "demo-title",
-              text: `${index + 1}. ${item.title || "Untitled example"}`
-            }),
-            el("p", {
-              className: "demo-meta",
-              text: item.sourceKey || item.excerpt || "Placeholder row"
+              text: item.anonymousId || "Anonymous"
             })
           ]),
           renderTracks(item.tracks)
@@ -63,7 +59,7 @@
     const root = document.getElementById("generation-list");
     if (!root) return;
 
-    (list || []).forEach((item, index) => {
+    (list || []).forEach((item) => {
       const meta = item.captionId
         ? `caption_id ${item.captionId}${item.trackId ? ` · track_id ${item.trackId}` : ""}`
         : "Placeholder row";
@@ -73,9 +69,8 @@
           el("div", { className: "demo-card-header" }, [
             el("p", {
               className: "demo-title",
-              text: `${index + 1}. Prompt`
+              text: item.prompt || "Prompt unavailable."
             }),
-            el("p", { className: "prompt", text: item.prompt || "Prompt unavailable." }),
             el("p", { className: "demo-meta", text: meta })
           ]),
           renderTracks(item.tracks)

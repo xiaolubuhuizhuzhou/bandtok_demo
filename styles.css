@@ -28,6 +28,25 @@ a {
   color: inherit;
 }
 
+.authors {
+  margin: 0.75rem 0 0;
+  font-size: 1.05rem;
+  font-weight: 500;
+}
+
+.affiliations {
+  margin: 0.35rem 0 0;
+  color: var(--muted);
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+.authors sup,
+.affiliations sup {
+  font-size: 0.7em;
+  vertical-align: super;
+}
+
 .wrap {
   width: min(1120px, calc(100% - 32px));
   margin: 0 auto;
@@ -131,56 +150,42 @@ button:hover {
 }
 
 .lead {
-  max-width: 900px;
+  max-width: 980px;
   margin-bottom: 0;
   color: #303a40;
-  font-size: 1.08rem;
+  border-left: 3px solid var(--accent);
+  padding-left: 18px;
+  font-size: 1rem;
+  line-height: 1.48;
+  text-align: justify;
 }
 
-.framework-placeholder {
+.framework-figures {
   display: grid;
-  grid-template-columns: minmax(130px, 1fr) 34px minmax(160px, 1.25fr) 34px minmax(130px, 1fr) 34px minmax(130px, 1fr);
-  gap: 12px;
-  align-items: center;
-  padding: 22px;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 24px;
+}
+
+.paper-figure {
+  margin: 0;
+}
+
+.paper-figure img {
+  display: block;
+  width: 100%;
+  height: 260px;
+  object-fit: contain;
+  padding: 10px;
   border: 1px solid var(--line);
   border-radius: 8px;
-  background: var(--panel);
+  background: #fff;
 }
 
-.stage {
-  display: grid;
-  min-height: 94px;
-  place-items: center;
-  border: 1px solid #cfdeda;
-  border-radius: 8px;
-  background: var(--soft);
-  padding: 14px;
-  text-align: center;
-  font-weight: 700;
-}
-
-.stage.strong {
-  border-color: #d5c091;
-  background: var(--warm);
-}
-
-.arrow {
-  height: 2px;
-  background: var(--accent);
-  position: relative;
-}
-
-.arrow::after {
-  content: "";
-  position: absolute;
-  top: 50%;
-  right: -1px;
-  width: 9px;
-  height: 9px;
-  border-top: 2px solid var(--accent);
-  border-right: 2px solid var(--accent);
-  transform: translateY(-50%) rotate(45deg);
+.paper-figure figcaption {
+  margin-top: 10px;
+  color: var(--muted);
+  font-size: 0.95rem;
+  line-height: 1.5;
 }
 
 .subsection + .subsection {
@@ -228,7 +233,6 @@ button:hover {
   font-weight: 800;
 }
 
-.demo-meta,
 .prompt {
   margin: 0;
   color: var(--muted);
@@ -308,21 +312,17 @@ pre {
     text-align: left;
   }
 
-  .framework-placeholder {
+  .lead {
+    text-align: left;
+  }
+
+  .framework-figures {
     grid-template-columns: 1fr;
   }
 
-  .arrow {
-    width: 2px;
-    height: 28px;
-    justify-self: center;
-  }
-
-  .arrow::after {
-    top: auto;
-    right: 50%;
-    bottom: -1px;
-    transform: translateX(50%) rotate(135deg);
+  .paper-figure img {
+    height: auto;
+    padding: 8px;
   }
 
   .track-grid {

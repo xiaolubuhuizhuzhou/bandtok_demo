@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Modeling Music as a Time-Frequency Image: A 2D Tokenizer for Music Generation</title>
+    <title>BandTok-A 2D Tokenizer for Music Generation</title>
     <link rel="stylesheet" href="styles.css">
   </head>
   <body>
@@ -11,8 +11,17 @@
       <div class="wrap header-grid">
         <div>
           <p class="eyebrow">Academic Demo</p>
-          <h1>Modeling Music as a Time-Frequency Image: A 2D Tokenizer for Music Generation</h1>
-          <p class="authors">Author Name(s) · Affiliation(s)</p>
+          <h1>BandTok: A 2D Tokenizer for Music Generation</h1>
+          <p class="authors">
+            Yuqing Cheng<sup>1</sup>,
+            Xingyu Ma<sup>2</sup>,
+            Guochen Yu<sup>2</sup>,
+            Xiaotao Gu<sup>2</sup>
+          </p>
+          <p class="affiliations">
+            <sup>1</sup>Central Conservatory of Music &nbsp;&nbsp;
+            <sup>2</sup>Zhipu AI
+          </p>
         </div>
         <nav class="links" aria-label="Project links">
           <a href="#" aria-disabled="true">Paper</a>
@@ -26,48 +35,43 @@
       <section class="wrap section" id="abstract">
         <h2>Abstract</h2>
         <p class="lead">
-          Abstract placeholder. Replace this text with the paper abstract when it is available.
-          This demo page presents reconstruction and text-to-music generation examples for
-          BandTok, a two-dimensional tokenizer that models music as a time-frequency image.
+          Autoregressive music generation depends strongly on the audio tokenizer. Existing high-fidelity codecs often use residual multi-codebook quantization, which preserves reconstruction quality but complicates language modeling after sequence flattening, as the residual hierarchy imposes strong sequential dependencies and can amplify error accumulation. We propose BandTok, a generation-oriented 2D Mel-spectrogram tokenizer that represents each frame with Mel-frequency band tokens from a single shared codebook. This design yields a physically interpretable time-frequency token grid with a more independent token structure, making it better suited for autoregressive modeling. BandTok improves reconstruction with a multi-scale PatchGAN objective and EMA codebook updates. We further introduce an autoregressive language model with 2D Rotary Position Embedding (2D RoPE) to preserve temporal and frequency-band structure during generation. Experiments show that BandTok improves over residual-codebook tokenizers and achieves strong results in a data-limited setting.
         </p>
       </section>
 
       <section class="wrap section" id="framework">
         <h2>Framework Overview</h2>
-        <div class="framework-placeholder" role="img" aria-label="Framework figure placeholder">
-          <div class="stage">
-            <span>Music Audio</span>
-          </div>
-          <div class="arrow" aria-hidden="true"></div>
-          <div class="stage strong">
-            <span>2D Time-Frequency Tokenizer</span>
-          </div>
-          <div class="arrow" aria-hidden="true"></div>
-          <div class="stage">
-            <span>Discrete Tokens</span>
-          </div>
-          <div class="arrow" aria-hidden="true"></div>
-          <div class="stage">
-            <span>Music Generation</span>
-          </div>
+        <div class="framework-figures">
+          <figure class="paper-figure">
+            <img
+              src="assets/image/BanTok-mainfigv3.jpg"
+              alt="BandTok framework overview"
+              loading="lazy"
+            >
+            <figcaption>
+              Comparison between RVQ tokenizers and BandTok. Figure(b) shows BandTok, which patchifies the Mel spectrogram into 2D latents and quantizes them with a single codebook. Its vertical axis corresponds to Mel-frequency bands.
+            </figcaption>
+          </figure>
+          <figure class="paper-figure">
+            <img
+              src="assets/image/nmi_ppl_profiles.jpg"
+              alt="NMI and perplexity profile analysis"
+              loading="lazy"
+            >
+            <figcaption>
+              Comparison between residual and band-wise tokens. Normalized mutual information (NMI) and language-model perplexity (PPL) are used to analyze token dependence and autoregressive prediction difficulty, respectively.
+            </figcaption>
+          </figure>
         </div>
       </section>
 
       <section class="wrap section" id="audio-demos">
-        <h2>Audio Demos</h2>
+        <h2>Generation Demos</h2>
 
         <div class="subsection">
           <div class="subsection-heading">
-            <h3>Reconstruction</h3>
-            <p>Ground-truth excerpts with codec baselines and BandTok reconstructions.</p>
-          </div>
-          <div id="reconstruction-list" class="demo-list"></div>
-        </div>
-
-        <div class="subsection">
-          <div class="subsection-heading">
-            <h3>Generation</h3>
-            <p>Text prompts from the CSV with generation baselines and BandTok outputs.</p>
+            <h3>Non-Cherry-Picked Results</h3>
+            <p>Text prompts from the SongDescriber Dataset.</p>
           </div>
           <div id="generation-list" class="demo-list"></div>
         </div>
@@ -76,11 +80,11 @@
       <section class="wrap section" id="citation">
         <h2>Citation</h2>
         <div class="citation-box">
-          <pre id="bibtex" tabindex="0">@inproceedings{bandtok2026,
-  title={Modeling Music as a Time-Frequency Image: A 2D Tokenizer for Music Generation},
-  author={Author Name(s)},
-  booktitle={Proceedings Placeholder},
-  year={2026}
+          <pre id="bibtex" tabindex="0">@inproceedings{cheng2026modeling,
+  title     = {Modeling Music as a Time-Frequency Image: A 2D Tokenizer for Music Generation},
+  author    = {Cheng, Yuqing and Ma, Xingyu and Yu, Guochen and Gu, Xiaotao},
+  booktitle = {IEEE ICME 2026 Challenge Papers},
+  year      = {2026}
 }</pre>
           <button id="copy-bibtex" type="button">Copy BibTeX</button>
         </div>

@@ -1,327 +1,25 @@
 window.BANDTOK_DEMO_DATA = {
   "projectTitle": "Modeling Music as a Time-Frequency Image: A 2D Tokenizer for Music Generation",
-  "reconstruction": [
-    {
-      "id": "rec-01",
-      "tracks": [
-        {
-          "label": "Original / Ground Truth",
-          "src": "assets/audio/reconstruction/rec_01_gt.mp3"
-        },
-        {
-          "label": "Encodec48k-3kbps",
-          "src": "assets/audio/reconstruction/rec_01_encodec3.mp3"
-        },
-        {
-          "label": "Encodec48k-6kbps",
-          "src": "assets/audio/reconstruction/rec_01_encodec6.mp3"
-        },
-        {
-          "label": "DAC-2.6kbps",
-          "src": "assets/audio/reconstruction/rec_01_dac26.mp3"
-        },
-        {
-          "label": "MelCap-2.2kbps",
-          "src": "assets/audio/reconstruction/rec_01_melcap22.mp3"
-        },
-        {
-          "label": "BandTok",
-          "src": "assets/audio/reconstruction/rec_01_bandtok.mp3"
-        }
-      ],
-      "anonymousId": "A7K2"
-    },
-    {
-      "id": "rec-02",
-      "tracks": [
-        {
-          "label": "Original / Ground Truth",
-          "src": "assets/audio/reconstruction/rec_02_gt.mp3"
-        },
-        {
-          "label": "Encodec48k-3kbps",
-          "src": "assets/audio/reconstruction/rec_02_encodec3.mp3"
-        },
-        {
-          "label": "Encodec48k-6kbps",
-          "src": "assets/audio/reconstruction/rec_02_encodec6.mp3"
-        },
-        {
-          "label": "DAC-2.6kbps",
-          "src": "assets/audio/reconstruction/rec_02_dac26.mp3"
-        },
-        {
-          "label": "MelCap-2.2kbps",
-          "src": "assets/audio/reconstruction/rec_02_melcap22.mp3"
-        },
-        {
-          "label": "BandTok",
-          "src": "assets/audio/reconstruction/rec_02_bandtok.mp3"
-        }
-      ],
-      "anonymousId": "M4Q9"
-    },
-    {
-      "id": "rec-03",
-      "tracks": [
-        {
-          "label": "Original / Ground Truth",
-          "src": "assets/audio/reconstruction/rec_03_gt.mp3"
-        },
-        {
-          "label": "Encodec48k-3kbps",
-          "src": "assets/audio/reconstruction/rec_03_encodec3.mp3"
-        },
-        {
-          "label": "Encodec48k-6kbps",
-          "src": "assets/audio/reconstruction/rec_03_encodec6.mp3"
-        },
-        {
-          "label": "DAC-2.6kbps",
-          "src": "assets/audio/reconstruction/rec_03_dac26.mp3"
-        },
-        {
-          "label": "MelCap-2.2kbps",
-          "src": "assets/audio/reconstruction/rec_03_melcap22.mp3"
-        },
-        {
-          "label": "BandTok",
-          "src": "assets/audio/reconstruction/rec_03_bandtok.mp3"
-        }
-      ],
-      "anonymousId": "R8T1"
-    },
-    {
-      "id": "rec-04",
-      "tracks": [
-        {
-          "label": "Original / Ground Truth",
-          "src": "assets/audio/reconstruction/rec_04_gt.mp3"
-        },
-        {
-          "label": "Encodec48k-3kbps",
-          "src": "assets/audio/reconstruction/rec_04_encodec3.mp3"
-        },
-        {
-          "label": "Encodec48k-6kbps",
-          "src": "assets/audio/reconstruction/rec_04_encodec6.mp3"
-        },
-        {
-          "label": "DAC-2.6kbps",
-          "src": "assets/audio/reconstruction/rec_04_dac26.mp3"
-        },
-        {
-          "label": "MelCap-2.2kbps",
-          "src": "assets/audio/reconstruction/rec_04_melcap22.mp3"
-        },
-        {
-          "label": "BandTok",
-          "src": "assets/audio/reconstruction/rec_04_bandtok.mp3"
-        }
-      ],
-      "anonymousId": "F6L3"
-    },
-    {
-      "id": "rec-05",
-      "tracks": [
-        {
-          "label": "Original / Ground Truth",
-          "src": "assets/audio/reconstruction/rec_05_gt.mp3"
-        },
-        {
-          "label": "Encodec48k-3kbps",
-          "src": "assets/audio/reconstruction/rec_05_encodec3.mp3"
-        },
-        {
-          "label": "Encodec48k-6kbps",
-          "src": "assets/audio/reconstruction/rec_05_encodec6.mp3"
-        },
-        {
-          "label": "DAC-2.6kbps",
-          "src": "assets/audio/reconstruction/rec_05_dac26.mp3"
-        },
-        {
-          "label": "MelCap-2.2kbps",
-          "src": "assets/audio/reconstruction/rec_05_melcap22.mp3"
-        },
-        {
-          "label": "BandTok",
-          "src": "assets/audio/reconstruction/rec_05_bandtok.mp3"
-        }
-      ],
-      "anonymousId": "N2V8"
-    },
-    {
-      "id": "rec-06",
-      "tracks": [
-        {
-          "label": "Original / Ground Truth",
-          "src": "assets/audio/reconstruction/rec_06_gt.mp3"
-        },
-        {
-          "label": "Encodec48k-3kbps",
-          "src": "assets/audio/reconstruction/rec_06_encodec3.mp3"
-        },
-        {
-          "label": "Encodec48k-6kbps",
-          "src": "assets/audio/reconstruction/rec_06_encodec6.mp3"
-        },
-        {
-          "label": "DAC-2.6kbps",
-          "src": "assets/audio/reconstruction/rec_06_dac26.mp3"
-        },
-        {
-          "label": "MelCap-2.2kbps",
-          "src": "assets/audio/reconstruction/rec_06_melcap22.mp3"
-        },
-        {
-          "label": "BandTok",
-          "src": "assets/audio/reconstruction/rec_06_bandtok.mp3"
-        }
-      ],
-      "anonymousId": "Q5C7"
-    },
-    {
-      "id": "rec-07",
-      "tracks": [
-        {
-          "label": "Original / Ground Truth",
-          "src": "assets/audio/reconstruction/rec_07_gt.mp3"
-        },
-        {
-          "label": "Encodec48k-3kbps",
-          "src": "assets/audio/reconstruction/rec_07_encodec3.mp3"
-        },
-        {
-          "label": "Encodec48k-6kbps",
-          "src": "assets/audio/reconstruction/rec_07_encodec6.mp3"
-        },
-        {
-          "label": "DAC-2.6kbps",
-          "src": "assets/audio/reconstruction/rec_07_dac26.mp3"
-        },
-        {
-          "label": "MelCap-2.2kbps",
-          "src": "assets/audio/reconstruction/rec_07_melcap22.mp3"
-        },
-        {
-          "label": "BandTok",
-          "src": "assets/audio/reconstruction/rec_07_bandtok.mp3"
-        }
-      ],
-      "anonymousId": "T9H4"
-    },
-    {
-      "id": "rec-08",
-      "tracks": [
-        {
-          "label": "Original / Ground Truth",
-          "src": "assets/audio/reconstruction/rec_08_gt.mp3"
-        },
-        {
-          "label": "Encodec48k-3kbps",
-          "src": "assets/audio/reconstruction/rec_08_encodec3.mp3"
-        },
-        {
-          "label": "Encodec48k-6kbps",
-          "src": "assets/audio/reconstruction/rec_08_encodec6.mp3"
-        },
-        {
-          "label": "DAC-2.6kbps",
-          "src": "assets/audio/reconstruction/rec_08_dac26.mp3"
-        },
-        {
-          "label": "MelCap-2.2kbps",
-          "src": "assets/audio/reconstruction/rec_08_melcap22.mp3"
-        },
-        {
-          "label": "BandTok",
-          "src": "assets/audio/reconstruction/rec_08_bandtok.mp3"
-        }
-      ],
-      "anonymousId": "K3P6"
-    },
-    {
-      "id": "rec-09",
-      "tracks": [
-        {
-          "label": "Original / Ground Truth",
-          "src": "assets/audio/reconstruction/rec_09_gt.mp3"
-        },
-        {
-          "label": "Encodec48k-3kbps",
-          "src": "assets/audio/reconstruction/rec_09_encodec3.mp3"
-        },
-        {
-          "label": "Encodec48k-6kbps",
-          "src": "assets/audio/reconstruction/rec_09_encodec6.mp3"
-        },
-        {
-          "label": "DAC-2.6kbps",
-          "src": "assets/audio/reconstruction/rec_09_dac26.mp3"
-        },
-        {
-          "label": "MelCap-2.2kbps",
-          "src": "assets/audio/reconstruction/rec_09_melcap22.mp3"
-        },
-        {
-          "label": "BandTok",
-          "src": "assets/audio/reconstruction/rec_09_bandtok.mp3"
-        }
-      ],
-      "anonymousId": "W8D2"
-    },
-    {
-      "id": "rec-10",
-      "tracks": [
-        {
-          "label": "Original / Ground Truth",
-          "src": "assets/audio/reconstruction/rec_10_gt.mp3"
-        },
-        {
-          "label": "Encodec48k-3kbps",
-          "src": "assets/audio/reconstruction/rec_10_encodec3.mp3"
-        },
-        {
-          "label": "Encodec48k-6kbps",
-          "src": "assets/audio/reconstruction/rec_10_encodec6.mp3"
-        },
-        {
-          "label": "DAC-2.6kbps",
-          "src": "assets/audio/reconstruction/rec_10_dac26.mp3"
-        },
-        {
-          "label": "MelCap-2.2kbps",
-          "src": "assets/audio/reconstruction/rec_10_melcap22.mp3"
-        },
-        {
-          "label": "BandTok",
-          "src": "assets/audio/reconstruction/rec_10_bandtok.mp3"
-        }
-      ],
-      "anonymousId": "L4S9"
-    }
-  ],
   "generation": [
     {
       "id": "gen-01",
-      "captionId": "3",
-      "trackId": "135657",
-      "prompt": "A dance music club banger, with a heavy kick, subtle supporting percussion like tabla and bongos, prominent pop synth lines, and a repetitive hook",
+      "captionId": "263",
+      "trackId": "1241778",
+      "prompt": "An instrumental rock song, with a bass, electric guitar, and drums. It is a lively, energetic and happy sounding track",
       "tracks": [
         {
           "label": "Stable Audio Open",
-          "src": "assets/audio/generation/gen_01_sao.mp3",
+          "src": "assets/audio/generation/gen_03_sao.mp3",
           "trimSeconds": 10
         },
         {
           "label": "Musicgen-large",
-          "src": "assets/audio/generation/gen_01_musicgen.mp3",
+          "src": "assets/audio/generation/gen_03_musicgen.mp3",
           "trimSeconds": 10
         },
         {
           "label": "BandTok",
-          "src": "assets/audio/generation/gen_01_bandtok.mp3",
+          "src": "assets/audio/generation/gen_03_bandtok.mp3",
           "trimSeconds": 10
         }
       ]
@@ -351,23 +49,23 @@ window.BANDTOK_DEMO_DATA = {
     },
     {
       "id": "gen-03",
-      "captionId": "263",
-      "trackId": "1241778",
-      "prompt": "An instrumental rock song, with a bass, electric guitar, and drums. It is a lively, energetic and happy sounding track",
+      "captionId": "3",
+      "trackId": "135657",
+      "prompt": "A dance music club banger, with a heavy kick, subtle supporting percussion like tabla and bongos, prominent pop synth lines, and a repetitive hook",
       "tracks": [
         {
           "label": "Stable Audio Open",
-          "src": "assets/audio/generation/gen_03_sao.mp3",
+          "src": "assets/audio/generation/gen_01_sao.mp3",
           "trimSeconds": 10
         },
         {
           "label": "Musicgen-large",
-          "src": "assets/audio/generation/gen_03_musicgen.mp3",
+          "src": "assets/audio/generation/gen_01_musicgen.mp3",
           "trimSeconds": 10
         },
         {
           "label": "BandTok",
-          "src": "assets/audio/generation/gen_03_bandtok.mp3",
+          "src": "assets/audio/generation/gen_01_bandtok.mp3",
           "trimSeconds": 10
         }
       ]
@@ -532,11 +230,239 @@ window.BANDTOK_DEMO_DATA = {
           "trimSeconds": 10
         }
       ]
+    },
+    {
+      "id": "gen-11",
+      "captionId": "232",
+      "trackId": "25250",
+      "prompt": "Harp, suitable for library, game and film music.",
+      "tracks": [
+        {
+          "label": "Stable Audio Open",
+          "src": "assets/audio/generation/gen_11_sao.mp3",
+          "trimSeconds": 10
+        },
+        {
+          "label": "Musicgen-large",
+          "src": "assets/audio/generation/gen_11_musicgen.mp3",
+          "trimSeconds": 10
+        },
+        {
+          "label": "BandTok",
+          "src": "assets/audio/generation/gen_11_bandtok.mp3",
+          "trimSeconds": 10
+        }
+      ]
+    },
+    {
+      "id": "gen-12",
+      "captionId": "43",
+      "trackId": "359664",
+      "prompt": "This is a solo piano piece with a somewhat melancholic mood. It's slow, with blocks of minor chords driving the melody forward. It reminds me of a Beethoven sonata or something like that.",
+      "tracks": [
+        {
+          "label": "Stable Audio Open",
+          "src": "assets/audio/generation/gen_12_sao.mp3",
+          "trimSeconds": 10
+        },
+        {
+          "label": "Musicgen-large",
+          "src": "assets/audio/generation/gen_12_musicgen.mp3",
+          "trimSeconds": 10
+        },
+        {
+          "label": "BandTok",
+          "src": "assets/audio/generation/gen_12_bandtok.mp3",
+          "trimSeconds": 10
+        }
+      ]
+    },
+    {
+      "id": "gen-13",
+      "captionId": "363",
+      "trackId": "686756",
+      "prompt": "A thrilling instrumental track featuring a series of stringed instruments being gradually built into the song, culminating in eastern european vibe section.",
+      "tracks": [
+        {
+          "label": "Stable Audio Open",
+          "src": "assets/audio/generation/gen_13_sao.mp3",
+          "trimSeconds": 10
+        },
+        {
+          "label": "Musicgen-large",
+          "src": "assets/audio/generation/gen_13_musicgen.mp3",
+          "trimSeconds": 10
+        },
+        {
+          "label": "BandTok",
+          "src": "assets/audio/generation/gen_13_bandtok.mp3",
+          "trimSeconds": 10
+        }
+      ]
+    },
+    {
+      "id": "gen-14",
+      "captionId": "793",
+      "trackId": "592180",
+      "prompt": "a melancholic piano solo piece without any dynamic",
+      "tracks": [
+        {
+          "label": "Stable Audio Open",
+          "src": "assets/audio/generation/gen_14_sao.mp3",
+          "trimSeconds": 10
+        },
+        {
+          "label": "Musicgen-large",
+          "src": "assets/audio/generation/gen_14_musicgen.mp3",
+          "trimSeconds": 10
+        },
+        {
+          "label": "BandTok",
+          "src": "assets/audio/generation/gen_14_bandtok.mp3",
+          "trimSeconds": 10
+        }
+      ]
+    },
+    {
+      "id": "gen-15",
+      "captionId": "833",
+      "trackId": "1245185",
+      "prompt": "A pop style synthesized instrumental track with mellow, chorus-like top line, and a prominent drum beat.",
+      "tracks": [
+        {
+          "label": "Stable Audio Open",
+          "src": "assets/audio/generation/gen_15_sao.mp3",
+          "trimSeconds": 10
+        },
+        {
+          "label": "Musicgen-large",
+          "src": "assets/audio/generation/gen_15_musicgen.mp3",
+          "trimSeconds": 10
+        },
+        {
+          "label": "BandTok",
+          "src": "assets/audio/generation/gen_15_bandtok.mp3",
+          "trimSeconds": 10
+        }
+      ]
+    },
+    {
+      "id": "gen-16",
+      "captionId": "188",
+      "trackId": "1060600",
+      "prompt": "Melodic jazz piece starting off with a solo sax intro and continues with smooth electric guitar and synthesizer riffs.",
+      "tracks": [
+        {
+          "label": "Stable Audio Open",
+          "src": "assets/audio/generation/gen_16_sao.mp3",
+          "trimSeconds": 10
+        },
+        {
+          "label": "Musicgen-large",
+          "src": "assets/audio/generation/gen_16_musicgen.mp3",
+          "trimSeconds": 10
+        },
+        {
+          "label": "BandTok",
+          "src": "assets/audio/generation/gen_16_bandtok.mp3",
+          "trimSeconds": 10
+        }
+      ]
+    },
+    {
+      "id": "gen-17",
+      "captionId": "346",
+      "trackId": "922941",
+      "prompt": "It's very upbeat and bouncy on its own style, sounds like the theme song for a happy protagonist of a 90s show, sounds very jazzy",
+      "tracks": [
+        {
+          "label": "Stable Audio Open",
+          "src": "assets/audio/generation/gen_17_sao.mp3",
+          "trimSeconds": 10
+        },
+        {
+          "label": "Musicgen-large",
+          "src": "assets/audio/generation/gen_17_musicgen.mp3",
+          "trimSeconds": 10
+        },
+        {
+          "label": "BandTok",
+          "src": "assets/audio/generation/gen_17_bandtok.mp3",
+          "trimSeconds": 10
+        }
+      ]
+    },
+    {
+      "id": "gen-18",
+      "captionId": "350",
+      "trackId": "1169705",
+      "prompt": "Beautiful and evocative piece of classical piano music with a nostalgic touch.",
+      "tracks": [
+        {
+          "label": "Stable Audio Open",
+          "src": "assets/audio/generation/gen_18_sao.mp3",
+          "trimSeconds": 10
+        },
+        {
+          "label": "Musicgen-large",
+          "src": "assets/audio/generation/gen_18_musicgen.mp3",
+          "trimSeconds": 10
+        },
+        {
+          "label": "BandTok",
+          "src": "assets/audio/generation/gen_18_bandtok.mp3",
+          "trimSeconds": 10
+        }
+      ]
+    },
+    {
+      "id": "gen-19",
+      "captionId": "692",
+      "trackId": "1119403",
+      "prompt": "A strings orchestra and piano combine in this waltz to give a fantasy feeling.",
+      "tracks": [
+        {
+          "label": "Stable Audio Open",
+          "src": "assets/audio/generation/gen_19_sao.mp3",
+          "trimSeconds": 10
+        },
+        {
+          "label": "Musicgen-large",
+          "src": "assets/audio/generation/gen_19_musicgen.mp3",
+          "trimSeconds": 10
+        },
+        {
+          "label": "BandTok",
+          "src": "assets/audio/generation/gen_19_bandtok.mp3",
+          "trimSeconds": 10
+        }
+      ]
+    },
+    {
+      "id": "gen-20",
+      "captionId": "1018",
+      "trackId": "5340",
+      "prompt": "A song with a guitar playing the same pedal note throughout the track which creates a dramatic and tense feeling. Percussive impacts and a melodic minor piano motif add to the darkness of the piece.",
+      "tracks": [
+        {
+          "label": "Stable Audio Open",
+          "src": "assets/audio/generation/gen_20_sao.mp3",
+          "trimSeconds": 10
+        },
+        {
+          "label": "Musicgen-large",
+          "src": "assets/audio/generation/gen_20_musicgen.mp3",
+          "trimSeconds": 10
+        },
+        {
+          "label": "BandTok",
+          "src": "assets/audio/generation/gen_20_bandtok.mp3",
+          "trimSeconds": 10
+        }
+      ]
     }
   ],
   "matchingNotes": [
-    "Reconstruction display uses anonymous random IDs only.",
-    "Reconstruction BandTok tracks were replaced using exact relative-path matching against the selected examples.",
     "Generation tracks are first-10-second MP3 clips matched by CSV caption_id to output filename stem."
   ],
   "placeholders": {

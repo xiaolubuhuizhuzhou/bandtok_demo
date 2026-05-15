@@ -36,42 +36,18 @@
     );
   }
 
-  function renderReconstruction(list) {
-    const root = document.getElementById("reconstruction-list");
-    if (!root) return;
-
-    (list || []).forEach((item) => {
-      root.appendChild(
-        el("article", { className: "demo-card" }, [
-          el("div", { className: "demo-card-header" }, [
-            el("p", {
-              className: "demo-title",
-              text: item.anonymousId || "Anonymous"
-            })
-          ]),
-          renderTracks(item.tracks)
-        ])
-      );
-    });
-  }
-
   function renderGeneration(list) {
     const root = document.getElementById("generation-list");
     if (!root) return;
 
     (list || []).forEach((item) => {
-      const meta = item.captionId
-        ? `caption_id ${item.captionId}${item.trackId ? ` · track_id ${item.trackId}` : ""}`
-        : "Placeholder row";
-
       root.appendChild(
         el("article", { className: "demo-card" }, [
           el("div", { className: "demo-card-header" }, [
             el("p", {
               className: "demo-title",
               text: item.prompt || "Prompt unavailable."
-            }),
-            el("p", { className: "demo-meta", text: meta })
+            })
           ]),
           renderTracks(item.tracks)
         ])
@@ -98,7 +74,6 @@
     });
   }
 
-  renderReconstruction(data.reconstruction);
   renderGeneration(data.generation);
   wireCopyButton();
 })();
